@@ -10469,3 +10469,27 @@ a.text-dark:focus {
   color: #35B8BD;
 }
 
+.hero-header {
+  background: url("/images/laptop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-header .heading {
+  padding: 11em 0em;
+}
+
+.hero-header .heading .btn-custom {
+  background-color: #35B8BD;
+  padding: 0.375rem 3rem;
+  border: 1px solid #35B8BD;
+  border-radius: 0;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.hero-header .heading .btn-custom:hover {
+  background-color: rgba(53, 184, 189, 0.25);
+}
+
