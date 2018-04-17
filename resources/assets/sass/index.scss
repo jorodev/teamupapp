@@ -1,3 +1,5 @@
+// Hero-header
+
 .hero-header {
     // background: linear-gradient(to right, #3DCFBD, #2FA4BE);
     background: url("/images/laptop.jpg");
@@ -19,5 +21,32 @@
                 background-color: rgba($app-secondary-color, 0.25)
             }
         }
+    }
+}
+
+.statistics {
+    background: linear-gradient(to right, #3DCFBD, #2FA4BE);
+    padding: 0.40rem 0 0.72rem;
+    color: white;
+}
+
+// Featurettes
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+  
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+
+    @media (min-width: 40em) {
+        font-size: 50px;
+    }
+      
+    @media (min-width: 62em) {
+        margin-top: 7rem;
     }
 }

@@ -10493,3 +10493,35 @@ a.text-dark:focus {
   background-color: rgba(53, 184, 189, 0.25);
 }
 
+.statistics {
+  background: -webkit-gradient(linear, left top, right top, from(#3DCFBD), to(#2FA4BE));
+  background: linear-gradient(to right, #3DCFBD, #2FA4BE);
+  padding: 0.40rem 0 0.72rem;
+  color: white;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
