@@ -10470,7 +10470,7 @@ a.text-dark:focus {
 }
 
 .hero-header {
-  background: url("/images/laptop.jpg");
+  background: url("/images/laptop-bg.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -10520,7 +10520,7 @@ a.text-dark:focus {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 3.5rem;
   }
 }
 
@@ -10528,33 +10528,12 @@ a.text-dark:focus {
   background: #2a2a2a;
 }
 
-.footer {
+footer {
   background: #2a2a2a;
-  padding: 3rem 0rem;
   color: white;
 }
 
-.footer a {
-  color: white !important;
-}
-
-.footer a .fab {
-  font-size: 1.2rem;
-}
-
-.footer a:not(:last-child) {
-  margin-right: 0.8rem;
-}
-
-.footer a .fa-facebook-f:hover {
-  color: #3B5998;
-}
-
-.footer a .fa-twitter:hover {
-  color: #1DA1F2;
-}
-
-.footer a .fa-skype:hover {
-  color: #00AFF0;
+footer .container {
+  max-width: 960px !important;
 }
 

@@ -1,35 +1,8 @@
-// Start footer
-// ---------------------------------------------------------------
-
-.footer {
+footer {
     background: $app-primary-color;
-    padding: 3rem 0rem;
     color: white;
 
-    a {
-        color: white !important;
-
-        .fab {
-            font-size: 1.2rem;
-        }
-
-        &:not(:last-child) {
-            margin-right: 0.8rem;
-        }
-
-        .fa-facebook-f:hover {
-            color: #3B5998;
-        }
-
-        .fa-twitter:hover {
-            color: #1DA1F2;
-        }
-
-        .fa-skype:hover {
-            color: #00AFF0;
-        }
+    .container {
+        max-width: 960px !important;
     }
 }
-
-// ---------------------------------------------------------------
-// End footer

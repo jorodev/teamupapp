@@ -1,12 +1,9 @@
-// Start index
-// ---------------------------------------------------------------
-
 // Start hero-header
 // -------------------------------
 
 .hero-header {
     // background: linear-gradient(to right, #3DCFBD, #2FA4BE);
-    background: url("/images/laptop.jpg");
+    background: url("/images/laptop-bg.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,7 +60,7 @@
     }
       
     @media (min-width: 62em) {
-        margin-top: 7rem;
+        margin-top: 3.5rem;
     }
 }
 
@@ -73,6 +70,3 @@
 
 // -------------------------------
 // End features
-
-// ---------------------------------------------------------------
-// End index
