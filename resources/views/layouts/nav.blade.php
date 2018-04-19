@@ -1,3 +1,4 @@
+{{-- Start navigation --}}
 <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
@@ -10,17 +11,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-link-effect"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-link-effect"><a class="nav-link" href="#">Projects</a></li>
-                <li class="nav-link-effect"><a class="nav-link" href="#">Partners</a></li>
+                <li class="nav-link-effect"><a class="nav-link" href="#">Look-ups</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @guest
-                    <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                    <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                    <li class="nav-link-effect"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                    <li class="nav-link-effect"><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                 @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -45,3 +45,4 @@
         </div>
     </div>
 </nav>
+{{-- End navigation --}}

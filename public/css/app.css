@@ -10471,16 +10471,18 @@ a.text-dark:focus {
 
 .hero-header {
   background: url("/images/laptop.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hero-header .heading {
-  padding: 11em 0em;
+  padding: 9.7rem 0rem;
 }
 
 .hero-header .heading .btn-custom {
+  margin-top: 1rem;
   background-color: #35B8BD;
   padding: 0.375rem 3rem;
   border: 1px solid #35B8BD;
@@ -10502,10 +10504,7 @@ a.text-dark:focus {
 
 .featurette-divider {
   margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */
 }
-
-/* Thin out the marketing headings */
 
 .featurette-heading {
   font-weight: 300;
@@ -10523,5 +10522,39 @@ a.text-dark:focus {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+
+.footer {
+  background: #2a2a2a;
+}
+
+.footer {
+  background: #2a2a2a;
+  padding: 3rem 0rem;
+  color: white;
+}
+
+.footer a {
+  color: white !important;
+}
+
+.footer a .fab {
+  font-size: 1.2rem;
+}
+
+.footer a:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+.footer a .fa-facebook-f:hover {
+  color: #3B5998;
+}
+
+.footer a .fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.footer a .fa-skype:hover {
+  color: #00AFF0;
 }
 

@@ -1,16 +1,22 @@
-// Hero-header
+// Start index
+// ---------------------------------------------------------------
+
+// Start hero-header
+// -------------------------------
 
 .hero-header {
     // background: linear-gradient(to right, #3DCFBD, #2FA4BE);
     background: url("/images/laptop.jpg");
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
     .heading {
-        padding: 11em 0em;
+        padding: 9.7rem 0rem;
 
         .btn-custom {
+            margin-top: 1rem;
             background-color: $app-secondary-color;
             padding: 0.375rem 3rem;
             border: 1px solid $app-secondary-color;
@@ -24,19 +30,29 @@
     }
 }
 
+// -------------------------------
+// End hero-header
+
+
+// Statistics
+// -------------------------------
+
 .statistics {
     background: linear-gradient(to right, #3DCFBD, #2FA4BE);
     padding: 0.40rem 0 0.72rem;
     color: white;
+    // text-transform: uppercase;
 }
 
-// Featurettes
+// -------------------------------
+// End statistics
 
+//  Start features
+// -------------------------------
 .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 5rem 0;
 }
-  
-/* Thin out the marketing headings */
+
 .featurette-heading {
     font-weight: 300;
     line-height: 1;
@@ -50,3 +66,13 @@
         margin-top: 7rem;
     }
 }
+
+.footer {
+    background: $app-primary-color;
+}
+
+// -------------------------------
+// End features
+
+// ---------------------------------------------------------------
+// End index
