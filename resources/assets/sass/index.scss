@@ -70,3 +70,58 @@
 
 // -------------------------------
 // End features
+
+// Start testimonies
+// -------------------------------
+
+.carousel {
+    margin-bottom: 4rem;
+    background: linear-gradient(to right, #3DCFBD, #2FA4BE);
+    // background: url("/images/laptop-bg.png");
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        left: 15%;
+        top: 50% !important;
+        transform: translateY(-50%);
+        text-align: center;
+        bottom: initial;
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            // font-size: 1.25rem;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 40em) {
+            /* Bump up size of carousel content */
+            h1 {
+                font-size: 1.80rem;
+            }
+
+            p {
+              margin-bottom: 1.25rem;
+              font-size: 1.15rem;
+              line-height: 1.4;
+            }
+        }
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel-item {
+        height: 23rem;
+    }
+}
+
+// -------------------------------
+// End testimonies

@@ -9,8 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
+                <li class="nav-link-effect"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-link-effect"><a class="nav-link" href="#">Projects</a></li>
                 <li class="nav-link-effect"><a class="nav-link" href="#">Look-ups</a></li>
+                <li class="nav-link-effect"><a class="nav-link" href="#">Forum</a></li>
             </ul>
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
