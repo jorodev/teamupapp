@@ -35,7 +35,7 @@
 // -------------------------------
 
 .statistics {
-    background: linear-gradient(to right, #3DCFBD, #2FA4BE);
+    background: $app-secondary-color;
     padding: 0.40rem 0 0.72rem;
     color: white;
     // text-transform: uppercase;
@@ -75,8 +75,8 @@
 // -------------------------------
 
 .carousel {
-    margin-bottom: 4rem;
-    background: linear-gradient(to right, #3DCFBD, #2FA4BE);
+    margin-top: 6em;
+    background: $app-orange-color;
     // background: url("/images/laptop-bg.png");
     // background-attachment: fixed;
     // background-position: center;
@@ -90,6 +90,7 @@
         transform: translateY(-50%);
         text-align: center;
         bottom: initial;
+        transition: all 0.50ms ease-in-out;
 
         img {
             width: 100px;
@@ -99,7 +100,6 @@
         }
         
         p {
-            // font-size: 1.25rem;
             line-height: 1.4;
         }
 
@@ -119,9 +119,27 @@
 
     /* Declare heights because of positioning of img element */
     .carousel-item {
-        height: 23rem;
+        height: 350px;
     }
 }
 
 // -------------------------------
 // End testimonies
+
+// Start team
+// -------------------------------
+
+.team {
+
+    .divider {
+        margin: 3rem 0;
+    }
+
+    img {
+        border: 2px solid $app-secondary-color;
+        border-radius: 50%;
+    }
+}
+
+// -------------------------------
+// End team

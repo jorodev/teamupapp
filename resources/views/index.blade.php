@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col-sm-12 col-md-4">
-                    <div class="col display-4">0</div>
+                    <div class="col display-4">1</div>
                     <div class="col">Users</div>
                 </div>
                 <div class="col-sm-12 col-md-4">
@@ -65,12 +65,11 @@
             <img class="featurette-image img-fluid mx-auto" src="/images/laptop-feature.png" alt="Generic placeholder image">
           </div>
         </div>
-        <hr class="featurette-divider">
     </section>
     {{-- End features --}}
     {{-- Start testimonies --}}
-    <h1 class="display-4 text-center p-4">Testimonials</h1>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <section id="myCarousel" class="carousel slide" data-ride="carousel">
+        <h1 class="display-4 text-center text-white pt-5 mt-5">Testimonials</h1>
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -81,7 +80,7 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <img src="/images/cat.jpg" alt="cat">
-                        <h1>Testimonial 1</h1>
+                        <h1>Person name 1</h1>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
                                 Nullam id dolor id nibh ultricies vehicula ut id elit.
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
@@ -93,7 +92,7 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <img src="/images/cat.jpg" alt="cat">
-                        <h1>Testimonial 2</h1>
+                        <h1>Person name 2</h1>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
                             Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     </div>
@@ -103,7 +102,7 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <img src="/images/cat.jpg" alt="cat">
-                        <h1>Testimonial 3</h1>
+                        <h1>Person name 3</h1>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. 
                             Nullam id dolor id nibh ultricies vehicula ut id elit.Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     </div>
@@ -118,6 +117,39 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </section>
     {{-- End testimonies --}}
+    {{-- Start sartners --}}
+    <section class="team">
+        <div class="container mb-5 text-center">
+            <h1 class="display-4 text-center py-4 mt-3">Team</h1>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+            
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <img class="mx-auto" src="/images/me.jpg" alt="">
+                    <h5 class="mt-3">Georgi Georgiev</h5>
+                    <h6>Founder & Web developer</h6>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <img class="mx-auto" src="http://via.placeholder.com/150x150" alt="">
+                    <h5 class="mt-3">Your place</h5>
+                </div>
+                <div class="col-xs-6 col-md-3">
+
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="mt-3">Be part of TeamUp</h4>
+                </div>
+                <div class="col-12">
+                    <p class="text-muted">We are looking for partners. If you think the project sounds interesting, feel free to <a href="#">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- End partners --}}
 @endsection

@@ -10496,8 +10496,7 @@ a.text-dark:focus {
 }
 
 .statistics {
-  background: -webkit-gradient(linear, left top, right top, from(#3DCFBD), to(#2FA4BE));
-  background: linear-gradient(to right, #3DCFBD, #2FA4BE);
+  background: #35B8BD;
   padding: 0.40rem 0 0.72rem;
   color: white;
 }
@@ -10529,9 +10528,8 @@ a.text-dark:focus {
 }
 
 .carousel {
-  margin-bottom: 4rem;
-  background: -webkit-gradient(linear, left top, right top, from(#3DCFBD), to(#2FA4BE));
-  background: linear-gradient(to right, #3DCFBD, #2FA4BE);
+  margin-top: 6em;
+  background: #CD402D;
   /* Since positioning the image, we need to help out the caption */
   /* Declare heights because of positioning of img element */
 }
@@ -10543,6 +10541,8 @@ a.text-dark:focus {
           transform: translateY(-50%);
   text-align: center;
   bottom: initial;
+  -webkit-transition: all 0.50ms ease-in-out;
+  transition: all 0.50ms ease-in-out;
 }
 
 .carousel .carousel-caption img {
@@ -10573,7 +10573,16 @@ a.text-dark:focus {
 }
 
 .carousel .carousel-item {
-  height: 23rem;
+  height: 350px;
+}
+
+.team .divider {
+  margin: 3rem 0;
+}
+
+.team img {
+  border: 2px solid #35B8BD;
+  border-radius: 50%;
 }
 
 footer {
