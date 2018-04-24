@@ -9,7 +9,8 @@
 @import '~bootstrap/scss/bootstrap';
 
 // Components
-@import 'nav.scss';
+@import 'inc/nav.scss';
+@import 'inc/footer.scss';
 @import 'index.scss';
-@import 'footer.scss';
-@import 'dashboard.scss';
+@import 'dashboard/dashboard.scss';
+@import 'dashboard/editprofile.scss';

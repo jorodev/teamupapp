@@ -1,0 +1,33 @@
+.dashboard {
+
+    .nav-link {
+        color: $app-primary-color;
+        padding: 0.2rem;
+
+        &:hover {
+            color: $app-secondary-color;
+            font-weight: bolder;
+        }
+    }
+
+    .active {
+        color: $app-secondary-color;
+        font-weight: bolder;
+    }
+
+    .btn-profile {
+        color: white;
+        background-color: $app-secondary-color;
+        border: 0;
+        padding: 0.5rem;
+
+        &:hover {
+            color: white;
+            font-weight: 500;
+        }
+
+        &:focus {
+            background-color: $app-secondary-color;
+        }
+    }
+}

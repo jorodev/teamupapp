@@ -53,6 +53,6 @@ class DashboardController extends Controller
 
     public function showProfile()
     {
-        return view('profile.index');
+        return view('profile.profile');
     }
 }

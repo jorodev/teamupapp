@@ -10473,6 +10473,15 @@ a.text-dark:focus {
   color: #35B8BD;
 }
 
+footer {
+  background: #2a2a2a;
+  color: white;
+}
+
+footer .container {
+  max-width: 960px !important;
+}
+
 .hero-header {
   background: url("/images/laptop-bg.png");
   background-attachment: fixed;
@@ -10584,21 +10593,12 @@ a.text-dark:focus {
   margin: 3rem 0;
 }
 
-footer {
-  background: #2a2a2a;
-  color: white;
-}
-
-footer .container {
-  max-width: 960px !important;
-}
-
-.dashboard a {
+.dashboard .nav-link {
   color: #2a2a2a;
   padding: 0.2rem;
 }
 
-.dashboard a:hover {
+.dashboard .nav-link:hover {
   color: #35B8BD;
   font-weight: bolder;
 }
@@ -10606,5 +10606,21 @@ footer .container {
 .dashboard .active {
   color: #35B8BD;
   font-weight: bolder;
+}
+
+.dashboard .btn-profile {
+  color: white;
+  background-color: #35B8BD;
+  border: 0;
+  padding: 0.5rem;
+}
+
+.dashboard .btn-profile:hover {
+  color: white;
+  font-weight: 500;
+}
+
+.dashboard .btn-profile:focus {
+  background-color: #35B8BD;
 }
 
