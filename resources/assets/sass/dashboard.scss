@@ -1,0 +1,17 @@
+.dashboard {
+
+    a {
+        color: $app-primary-color;
+        padding: 0.2rem;
+
+        &:hover {
+            color: $app-secondary-color;
+            font-weight: bolder;
+        }
+    }
+
+    .active {
+        color: $app-secondary-color;
+        font-weight: bolder;
+    }
+}

@@ -10580,11 +10580,6 @@ a.text-dark:focus {
   margin: 3rem 0;
 }
 
-.team img {
-  border: 2px solid #35B8BD;
-  border-radius: 50%;
-}
-
 footer {
   background: #2a2a2a;
   color: white;
@@ -10592,5 +10587,20 @@ footer {
 
 footer .container {
   max-width: 960px !important;
+}
+
+.dashboard a {
+  color: #2a2a2a;
+  padding: 0.2rem;
+}
+
+.dashboard a:hover {
+  color: #35B8BD;
+  font-weight: bolder;
+}
+
+.dashboard .active {
+  color: #35B8BD;
+  font-weight: bolder;
 }
 

@@ -119,7 +119,7 @@
         </a>
     </section>
     {{-- End testimonies --}}
-    {{-- Start sartners --}}
+    {{-- Start partners --}}
     <section class="team">
         <div class="container mb-5 text-center">
             <h1 class="display-4 text-center py-4 mt-3">Team</h1>
@@ -128,12 +128,12 @@
             
                 </div>
                 <div class="col-xs-6 col-md-3">
-                    <img class="mx-auto" src="/images/me.jpg" alt="">
+                    <img class="mx-auto rounded border border-primary" src="/images/me.jpg" alt="">
                     <h5 class="mt-3">Georgi Georgiev</h5>
                     <h6>Founder & Web developer</h6>
                 </div>
                 <div class="col-xs-6 col-md-3">
-                    <img class="mx-auto" src="http://via.placeholder.com/150x150" alt="">
+                    <img class="mx-auto rounded border border-primary" src="http://via.placeholder.com/150x150" alt="">
                     <h5 class="mt-3">Your place</h5>
                 </div>
                 <div class="col-xs-6 col-md-3">
