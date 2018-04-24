@@ -23,6 +23,36 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard.dashboard');
+        return view('dashboard.mypage');
+    }
+
+    public function showMessages()
+    {
+        return view('dashboard.messages');
+    }
+
+    public function showProjects()
+    {
+        return view('dashboard.projects');
+    }
+
+    public function showLookups()
+    {
+        return view('dashboard.lookups');
+    }
+
+    public function editProfile()
+    {
+        return view('dashboard.editprofile');
+    }
+
+    public function showSettings()
+    {
+        return view('dashboard.settings');
+    }
+
+    public function showProfile()
+    {
+        return view('profile.index');
     }
 }

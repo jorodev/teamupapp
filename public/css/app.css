@@ -10399,6 +10399,10 @@ a.text-dark:focus {
   color: #35B8BD;
 }
 
+.navbar-brand {
+  color: #35B8BD !important;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 }

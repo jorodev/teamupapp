@@ -7,7 +7,7 @@
             <img class="rounded" src="http://via.placeholder.com/150x150" alt="Avatar">
             <h4 class="py-4">Name</h4>
             <ul class="list-unstyled flex-column" aria-orientation="vertical">
-                <a class="nav-link nav-link-effect active" href="/dashboard">Dashboard</a>
+                <a class="nav-link nav-link-effect active" href="/dashboard">My Page</a>
                 <a class="nav-link" href="/dashboard/messages">Messages</a>
                 <a class="nav-link" href="/dashboard/projects">Projects</a>
                 <a class="nav-link" href="/dashboard/lookups">Look-ups</a>
@@ -16,10 +16,10 @@
             </ul>
         </div>
         <div class="col-md-9 py-5">
-            <h3>Dashboard</h3>
+            <h3>Edit Profile</h3>
             <hr class="divider">
             <div class="px-3">
-                Activity
+                ...
             </div>
         </div>
     </div>
