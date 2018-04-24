@@ -10593,17 +10593,17 @@ footer .container {
   margin: 3rem 0;
 }
 
-.dashboard .nav-link {
+.dashboard .dashboard-link {
   color: #2a2a2a;
   padding: 0.2rem;
 }
 
-.dashboard .nav-link:hover {
+.dashboard .dashboard-link:hover {
   color: #35B8BD;
   font-weight: bolder;
 }
 
-.dashboard .active {
+.dashboard .dashboard-link .active {
   color: #35B8BD;
   font-weight: bolder;
 }
@@ -10622,5 +10622,20 @@ footer .container {
 
 .dashboard .btn-profile:focus {
   background-color: #35B8BD;
+}
+
+.edit-profile .nav-link,
+.edit-profile .nav-tabs {
+  color: black;
+}
+
+.edit-profile .nav-link .active,
+.edit-profile .nav-tabs .active {
+  color: #35B8BD;
+}
+
+.edit-profile .tab-content {
+  color: #2a2a2a;
+  padding: 1rem 0rem;
 }
 

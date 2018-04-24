@@ -1,6 +1,6 @@
 .dashboard {
-
-    .nav-link {
+    
+    .dashboard-link {
         color: $app-primary-color;
         padding: 0.2rem;
 
@@ -8,11 +8,11 @@
             color: $app-secondary-color;
             font-weight: bolder;
         }
-    }
 
-    .active {
-        color: $app-secondary-color;
-        font-weight: bolder;
+        .active {
+            color: $app-secondary-color;
+            font-weight: bolder;
+        }
     }
 
     .btn-profile {

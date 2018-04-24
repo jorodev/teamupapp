@@ -1,0 +1,15 @@
+.edit-profile {
+
+    .nav-link, .nav-tabs {
+        color: black;
+
+        .active {
+            color: $app-secondary-color;
+        }
+    }
+
+    .tab-content {
+        color: $app-primary-color;
+        padding: 1rem 0rem;
+    }
+}

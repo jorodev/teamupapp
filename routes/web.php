@@ -18,7 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 // Dashboard
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/dashboard', 'DashboardController@index')->name('Dashboard');
 Route::get('/dashboard/messages', 'DashboardController@showMessages');
 Route::get('/dashboard/projects', 'DashboardController@showProjects');
 Route::get('/dashboard/lookups', 'DashboardController@showLookups');

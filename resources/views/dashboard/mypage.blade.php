@@ -9,7 +9,7 @@
         <div class="col-md-9 py-5">
             <h3>My Page</h3>
             <hr class="divider">
-            <div class="px-3">
+            <div>
                 Activity
             </div>
         </div>
