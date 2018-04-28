@@ -1,16 +1,26 @@
 .edit-profile {
+    background: #F5F5F5;
+    border: 1px solid #e1e1e1;
+    padding: 0.8rem 0rem 0rem 0rem;
 
     .nav-link, .nav-tabs {
-        color: black;
+        background: #F5F5F5;
+        color: $app-primary-color;
 
         .active {
-            color: $app-secondary-color;
+            color: $app-primary-color;
+            background: white;
         }
+    }
+
+    .nav-tabs {
+        padding: 0rem 1rem 0rem 0rem;
     }
 
     .tab-content {
         color: $app-primary-color;
-        padding: 1rem 0rem;
+        padding: 1rem 1rem;
+        background: white;
     }
 }
 

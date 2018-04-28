@@ -23,12 +23,12 @@
                       <form> 
                           <div class="form-row">
                             <div class="form-group col-md-6">
-                              <label for="inputFirstName">First Name</label>
-                              <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                              <label for="inputFirstName">First name</label>
+                              <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
                             </div>
                             <div class="form-group col-md-6">
-                              <label for="inputFirstName">Last Name</label>
-                              <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                              <label for="inputFirstName">Last name</label>
+                              <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
                             </div>
                           </div>
                           <div class="form-row">
@@ -58,16 +58,12 @@
                                 <label for="gender">Gender</label>
                               </div>
                               <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                  Male
-                                </label>
+                                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="Male" aria-label="male">
+                                Male
                               </div>
                               <div class="form-group">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                  Female
-                                </label>
+                                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="Female" aria-label="female">
+                                Female
                               </div>
                             </div>
                           </div>

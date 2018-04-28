@@ -10482,6 +10482,10 @@ footer .container {
   max-width: 960px !important;
 }
 
+body {
+  background-color: white;
+}
+
 .hero-header {
   background: url("/images/laptop-bg.png");
   background-attachment: fixed;
@@ -10624,19 +10628,32 @@ footer .container {
   background-color: #35B8BD;
 }
 
+.edit-profile {
+  background: #F5F5F5;
+  border: 1px solid #e1e1e1;
+  padding: 0.8rem 0rem 0rem 0rem;
+}
+
 .edit-profile .nav-link,
 .edit-profile .nav-tabs {
-  color: black;
+  background: #F5F5F5;
+  color: #2a2a2a;
 }
 
 .edit-profile .nav-link .active,
 .edit-profile .nav-tabs .active {
-  color: #35B8BD;
+  color: #2a2a2a;
+  background: white;
+}
+
+.edit-profile .nav-tabs {
+  padding: 0rem 1rem 0rem 0rem;
 }
 
 .edit-profile .tab-content {
   color: #2a2a2a;
-  padding: 1rem 0rem;
+  padding: 1rem 1rem;
+  background: white;
 }
 
 .gender-check .form-group {
