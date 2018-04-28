@@ -6,7 +6,7 @@
         
         @include('layouts.dashboard')
 
-        <div class="col-md-9 py-5 pl-5">
+        <div class="col-md-9 py-5 pl-5 bg-white">
             <h3>Edit Profile</h3>
             <hr class="divider">
             <div class="edit-profile">

@@ -10399,10 +10399,6 @@ a.text-dark:focus {
   color: #35B8BD;
 }
 
-.navbar-brand {
-  color: #35B8BD !important;
-}
-
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 }
@@ -10632,6 +10628,10 @@ body {
   background: #F5F5F5;
   border: 1px solid #e1e1e1;
   padding: 0.8rem 0rem 0rem 0rem;
+}
+
+.edit-profile label {
+  font-weight: bold;
 }
 
 .edit-profile .nav-link,

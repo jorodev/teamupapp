@@ -3,6 +3,10 @@
     border: 1px solid #e1e1e1;
     padding: 0.8rem 0rem 0rem 0rem;
 
+    label {
+        font-weight: bold;
+    }
+
     .nav-link, .nav-tabs {
         background: #F5F5F5;
         color: $app-primary-color;

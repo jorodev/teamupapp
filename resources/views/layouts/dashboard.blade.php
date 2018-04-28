@@ -3,7 +3,6 @@
     <h4 class="py-4">Name</h4>
     <ul class="list-unstyled flex-column" aria-orientation="vertical">
         <a class="nav-link dashboard-link active" href="/dashboard">My Page</a>
-        <a class="nav-link dashboard-link" href="/dashboard/messages">Messages</a>
         <a class="nav-link dashboard-link" href="/dashboard/projects">Projects</a>
         <a class="nav-link dashboard-link" href="/dashboard/lookups">Look-ups</a>
         <a class="nav-link dashboard-link" href="/dashboard/profile/edit">Edit profile</a>
