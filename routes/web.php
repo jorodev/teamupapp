@@ -26,3 +26,7 @@ Route::get('/dashboard/profile/edit', 'DashboardController@editProfile');
 Route::get('/dashboard/settings', 'DashboardController@showSettings');
 
 Route::get('/profile/name', 'DashboardController@showProfile');
+
+//Projects
+Route::get('/projects', 'ProjectController@index');
+Route::get('/projects/create', 'ProjectController@create');
