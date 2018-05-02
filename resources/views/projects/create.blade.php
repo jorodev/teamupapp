@@ -37,7 +37,7 @@
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <div class="form-group py-4">
-                    <button class="btn btn-primary btn-custom">Create project</button>
+                    <button class="btn btn-primary btn-profile">Create project</button>
                 </div>
             </form>
         </div>
