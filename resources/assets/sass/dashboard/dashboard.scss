@@ -31,3 +31,17 @@
         }
     }
 }
+
+.btn-view {
+    padding: 0.1rem 0;
+    background-color: whitesmoke;
+    font-size: 12px;
+    font-weight: bold;
+    width: 50px;
+    color: black;
+    border: 1px solid gray;
+
+    &:hover {
+        color: black;
+    }
+}

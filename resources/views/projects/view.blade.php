@@ -9,7 +9,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">by <span><a href="#">User</a></span></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
             <div class="card mx-4 mb-4" style="width: 18rem;">
@@ -17,7 +16,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">by <span><a href="#">User</a></span></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
             <div class="card mx-4 mb-4" style="width: 18rem;">
@@ -25,7 +23,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">by <span><a href="#">User</a></span></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
             <div class="card mx-4 mb-4" style="width: 18rem;">
@@ -33,7 +30,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">by <span><a href="#">User</a></span></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
             <div class="card mx-4 mb-4" style="width: 18rem;">
@@ -41,7 +37,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">by <span><a href="#">User</a></span></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
             <div class="card mx-4 mb-4" style="width: 18rem;">
@@ -49,9 +44,11 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">by <span><a href="#">User</a></span></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <a href="projects/create" class="btn btn-primary btn-profile mx-auto m-4">Create project</a>
         </div>
     </section>
 @endsection
