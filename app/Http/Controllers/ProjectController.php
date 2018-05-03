@@ -3,9 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Project;
+use Auth;
 
 class ProjectController extends Controller
 {
+    public function __construct() 
+    {
+        $this->middleware('auth')->except(['show', 'index']);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -36,7 +43,20 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required',
+            'description' => 'required',
+            'termsAndConditions' => 'required',
+        ]);
+
+        $project = new Project;
+        $project->user_id = Auth::id();
+        $project->title = $request->input('title');
+        $project->description = $request->input('description');
+        $project->termsAndConditions = $request->input('termsAndConditions');
+        $project->save();
+
+        return redirect('/')->with('success', 'Project added!');
     }
 
     /**
