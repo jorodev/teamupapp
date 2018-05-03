@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+    @if(Session::has('message'))
+        <div class="alert alert-info">
+            {{ Session::get('message') }}
+        </div>
+    @endif
     <section class="view-projects container">
         <h1 class="text-center pt-4">All Projects</h1>
         <div class="row justify-content-center py-4">

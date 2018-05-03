@@ -56,7 +56,7 @@ class ProjectController extends Controller
         $project->termsAndConditions = $request->input('termsAndConditions');
         $project->save();
 
-        return redirect('/')->with('success', 'Project added!');
+        return redirect('/projects')->with('message', 'Project made successfully!');
     }
 
     /**
