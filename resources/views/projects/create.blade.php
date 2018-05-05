@@ -10,7 +10,7 @@
             
         </div>
         <div class="col col-md-8">
-            <form action="/projects/create" method="POST">
+            <form action="/projects/create" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <label name="title">Title</label>
@@ -19,10 +19,10 @@
                 <div class="form-group">
                     <label name="stage">Stage</label>
                     <select name="stage" id="project-stage" class="form-control">
-                        <option selected>Idea</option>
-                        <option>Product or prototype</option>
-                        <option>Go to market</option>
-                        <option>Growth and expansion</option>
+                        <option name="idea" value="idea" selected>Idea</option>
+                        <option name="product or prototype" value="product or prototype">Product or prototype</option>
+                        <option name="go to market" value="go to market">Go to market</option>
+                        <option name="growth and expansion" value="growth and expansion">Growth and expansion</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -34,8 +34,8 @@
                     <textarea name="termsAndConditions" class="form-control" id="project-description" rows="8"></textarea>
                 </div>
                 <div class="form-group">
-                    <label name="image">Example file input</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <label name="project_image">Upload project image:</label>
+                    <input type="file" name="project_image" class="form-control-file" id="project_image">
                 </div>
                 <div class="form-group py-4">
                     <button type="submit" class="btn btn-primary btn-profile">Create project</button>

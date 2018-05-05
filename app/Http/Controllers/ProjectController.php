@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Project;
 use Auth;
+use Image;
 
 class ProjectController extends Controller
 {
@@ -20,8 +21,9 @@ class ProjectController extends Controller
      */
     public function index()
     {
+        $project = Project::all();
         
-        return view('projects.view');
+        return view('projects.view', compact('project'));
     }
 
     /**
@@ -45,6 +47,7 @@ class ProjectController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
+            'stage' => 'required',
             'description' => 'required',
             'termsAndConditions' => 'required',
         ]);
@@ -52,11 +55,19 @@ class ProjectController extends Controller
         $project = new Project;
         $project->user_id = Auth::id();
         $project->title = $request->input('title');
+        $project->stage = $request->input('stage');
         $project->description = $request->input('description');
         $project->termsAndConditions = $request->input('termsAndConditions');
+
+        $image = $request->file('project_image');
+        $filename = time() . '-' . $image->getClientOriginalName();
+        $location = public_path('images/' . $filename);
+        Image::make($image)->resize(350, 150)->save($location);
+        $project->image = $filename;
+
         $project->save();
 
-        return redirect('/projects')->with('message', 'Project made successfully!');
+        return redirect('/projects')->with('success', 'Project created successfully!');
     }
 
     /**

@@ -1,10 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-    @if(Session::has('message'))
-        <div class="alert alert-info">
-            {{ Session::get('message') }}
+    @if (Session::has('success'))
+        <div class="alert alert-info text-center">
+            {{ Session::get('success') }}
         </div>
+    @endif
+
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
     @endif
     <section class="view-projects container">
         <h1 class="text-center pt-4">All Projects</h1>
