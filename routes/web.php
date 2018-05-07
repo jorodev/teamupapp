@@ -30,4 +30,5 @@ Route::get('/profile/name', 'DashboardController@showProfile');
 //Projects
 Route::get('/projects', 'ProjectController@index');
 Route::get('/projects/create', 'ProjectController@create');
+Route::get('/projects/{id}', 'ProjectController@show');
 Route::post('/projects/create', 'ProjectController@store');
