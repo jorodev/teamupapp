@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Project;
 
 class DashboardController extends Controller
 {
@@ -34,7 +36,9 @@ class DashboardController extends Controller
 
     public function showProjects()
     {
-        return view('dashboard.projects');
+        $projects = User::find(1)->project;
+
+        return view('dashboard.projects', compact('projects'));
     }
 
     public function showLookups()
