@@ -7,6 +7,7 @@ use App\User;
 use App\Project;
 use Auth;
 use Image;
+use File;
 
 class ProjectController extends Controller
 {
@@ -114,6 +115,10 @@ class ProjectController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $project = Project::find($id);
+        $project->delete();
+        File::delete(public_path() .  '/images/' . $project->image);
+
+        return redirect('/projects')->with('success', 'Project deleted successfully!');
     }
 }

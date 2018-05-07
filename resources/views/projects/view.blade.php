@@ -24,7 +24,7 @@
                     <div class="card mx-4 mb-4" style="width: 18rem;">
                         <img class="card-img-top" src="{{ asset("images/$project->image") }}" alt="project image">
                         <div class="card-body">
-                        <h5 class="card-title">{{ $project->title }}</h5>
+                        <h5 class="card-title"><a href="/projects/{{ $project->id }}">{{ $project->title }}</a></h5>
                         <p class="card-text">by <span><a href="#">{{ $project->user->name }}</a></span></p>
                         </div>
                     </div>
