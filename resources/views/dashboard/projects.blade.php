@@ -18,7 +18,7 @@
             <hr class="divider hidden-xs">
             <div class="">
                 <h3 class="mt-4">Owned projects</h3>
-                @if(count($projects) != 0)
+                @if(count($projects) > 0)
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -56,7 +56,7 @@
                             <tr>
                                 <td scope="col">Project 1</td>
                                 <td>imgs</td>
-                                <td class="text-right"><a href="/projects/view/{{ $project->id }}" class="btn btn-outline-secondary btn-sm">View</a> <a href="#" class="btn btn-outline-secondary btn-sm">Dashboard</a></td>
+                                {{-- <td class="text-right"><a href="/projects/view/{{ $project->id }}" class="btn btn-outline-secondary btn-sm">View</a> <a href="#" class="btn btn-outline-secondary btn-sm">Dashboard</a></td> --}}
                             </tr>
                         </tbody>
                     </table>

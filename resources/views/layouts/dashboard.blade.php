@@ -1,6 +1,6 @@
 <div class="col-md-3 py-5 border-right text-center">
-    <img class="rounded" src="http://via.placeholder.com/150x150" alt="Avatar">
-    <h4 class="py-4">Name</h4>
+    <img class="rounded" src="/images/{{ Auth::user()->image }}" alt="avatar">
+    <h4 class="py-4">{{ Auth::user()->name }}</h4>
     <ul class="list-unstyled flex-column" aria-orientation="vertical">
         <a class="nav-link dashboard-link {{ Route::currentRouteNamed('dashboard') ? 'dashboard-nav-active' : '' }}" href="/dashboard">My Page</a>
         <a class="nav-link dashboard-link {{ Route::currentRouteNamed('showProjects') ? 'dashboard-nav-active' : '' }}" href="/dashboard/projects">Projects</a>
