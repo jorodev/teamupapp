@@ -1,3 +1,44 @@
-.view-project {
+.view-projects {
+    .overlay {
+        position: relative;
+        background-color: black;
+    }
     
+    .overlay-image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    
+    .overlay-middle {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: $app-secondary-color;
+    }
+    
+    .overlay:hover .overlay-middle {
+        opacity: 1;
+    }
+    
+    .overlay-text {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }

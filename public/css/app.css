@@ -10712,3 +10712,50 @@ body {
   margin-bottom: 0;
 }
 
+.view-projects .overlay {
+  position: relative;
+  background-color: black;
+}
+
+.view-projects .overlay-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.view-projects .overlay-middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #35B8BD;
+}
+
+.view-projects .overlay:hover .overlay-middle {
+  opacity: 1;
+}
+
+.view-projects .overlay-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
