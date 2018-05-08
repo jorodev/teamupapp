@@ -10759,3 +10759,15 @@ body {
   text-align: center;
 }
 
+.view-projects .page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #35B8BD;
+  border-color: #35B8BD;
+}
+
+.view-projects .page-link {
+  color: #35B8BD;
+  font-weight: bold;
+}
+

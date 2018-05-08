@@ -41,4 +41,16 @@
         -ms-transform: translate(-50%, -50%);
         text-align: center;
     }
+
+    .page-item.active .page-link {
+        z-index: 1;
+        color: #fff;
+        background-color: $app-secondary-color;
+        border-color: $app-secondary-color;
+    }
+
+    .page-link {
+        color: $app-secondary-color;
+        font-weight: bold;
+    }
 }
