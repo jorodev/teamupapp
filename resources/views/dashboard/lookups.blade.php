@@ -12,7 +12,7 @@
                     <h3 class="">Look-ups</h3>
                 </div>
                 <div class="col-6">
-                    <a href="projects/create" class="btn btn-primary btn-profile float-right">Create look-up</a>
+                    <a href="{{ URL('projects/create') }}" class="btn btn-primary btn-profile-md float-right">Create look-up</a>
                 </div>
             </div>
             <hr class="divider hidden-xs">

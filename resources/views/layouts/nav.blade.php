@@ -9,9 +9,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-link-effect"><a class="nav-link" href="/projects">Projects</a></li>
-                <li class="nav-link-effect"><a class="nav-link" href="#">Look-ups</a></li>
-                <li class="nav-link-effect"><a class="nav-link" href="#">Forum</a></li>
+                <li class="nav-link-effect"><a class="nav-link {{ Route::currentRouteNamed('projects') ? 'main-nav-active' : '' }}" href="/projects">Projects</a></li>
+                <li class="nav-link-effect"><a class="nav-link {{ Route::currentRouteNamed('lookups') ? 'main-nav-active' : '' }}" href="#">Look-ups</a></li>
+                <li class="nav-link-effect"><a class="nav-link {{ Route::currentRouteNamed('forum') ? 'main-nav-active' : '' }}" href="#">Forum</a></li>
             </ul>
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
@@ -25,8 +25,8 @@
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ url('/dashboard') }}">My Page</a>
-                            <a class="dropdown-item" href="{{ url('/dashboard/settings') }}">Settings</a>
+                            <a class="dropdown-item {{ Route::currentRouteNamed('dashboard') ? 'main-nav-active' : '' }}" href="{{ url('/dashboard') }}">My Page</a>
+                            <a class="dropdown-item {{ Route::currentRouteNamed('showSettings') ? 'main-nav-active' : '' }}" href="{{ url('/dashboard/settings') }}">Settings</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">

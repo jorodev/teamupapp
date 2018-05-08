@@ -10469,6 +10469,10 @@ a.text-dark:focus {
   color: #35B8BD;
 }
 
+.main-nav-active {
+  color: #35B8BD !important;
+}
+
 footer {
   background: #2a2a2a;
   color: white;
@@ -10668,10 +10672,9 @@ body {
 
 .dashboard .dashboard-link:hover {
   color: #35B8BD;
-  font-weight: bolder;
 }
 
-.dashboard .dashboard-link .active {
+.dashboard .dashboard-nav-active {
   color: #35B8BD;
   font-weight: bolder;
 }

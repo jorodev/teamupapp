@@ -18,18 +18,18 @@ Route::get('/', function () {
 Auth::routes();
 
 // Dashboard
-Route::get('/dashboard', 'DashboardController@index')->name('Dashboard');
-Route::get('/dashboard/messages', 'DashboardController@showMessages');
-Route::get('/dashboard/projects', 'DashboardController@showProjects');
-Route::get('/dashboard/lookups', 'DashboardController@showLookups');
-Route::get('/dashboard/profile/edit', 'DashboardController@editProfile');
-Route::get('/dashboard/settings', 'DashboardController@showSettings');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/dashboard/messages', 'DashboardController@showMessages')->name('showMessages');
+Route::get('/dashboard/projects', 'DashboardController@showProjects')->name('showProjects');
+Route::get('/dashboard/lookups', 'DashboardController@showLookups')->name('showLookups');
+Route::get('/dashboard/profile/edit', 'DashboardController@editProfile')->name('editProfile');
+Route::get('/dashboard/settings', 'DashboardController@showSettings')->name('showSettings');
 
-Route::get('/profile/name', 'DashboardController@showProfile');
+Route::get('/profile/name', 'DashboardController@showProfile')->name('showProfile');
 
-//Projects
-Route::get('/projects', 'ProjectController@index');
-Route::get('/projects/create', 'ProjectController@create');
-Route::get('/projects/view/{id}', 'ProjectController@show');
-Route::post('/projects/create', 'ProjectController@store');
-Route::delete('/projects/delete/{id}', 'ProjectController@destroy');
+// Projects
+Route::get('/projects', 'ProjectController@index')->name('projects');
+Route::get('/projects/create', 'ProjectController@create')->name('projects');
+Route::get('/projects/view/{id}', 'ProjectController@show')->name('projects');
+Route::post('/projects/create', 'ProjectController@store')->name('projects');
+Route::delete('/projects/delete/{id}', 'ProjectController@destroy')->name('projects');

@@ -6,12 +6,11 @@
 
         &:hover {
             color: $app-secondary-color;
-            font-weight: bolder;
         }
+    }
 
-        .active {
-            color: $app-secondary-color;
-            font-weight: bolder;
-        }
+    .dashboard-nav-active {
+        color: $app-secondary-color;
+        font-weight: bolder;
     }
 }
