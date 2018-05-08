@@ -63,7 +63,7 @@ class ProjectController extends Controller
         $image = $request->file('project_image');
         $filename = time() . '-' . $image->getClientOriginalName();
         $location = public_path('images/' . $filename);
-        Image::make($image)->resize(350, 150)->save($location);
+        Image::make($image)->resize(360, 150)->save($location);
         $project->image = $filename;
 
         $project->save();

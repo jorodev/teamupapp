@@ -10527,6 +10527,43 @@ body {
   border-color: #35B8BD;
 }
 
+.btn-profile-lg {
+  color: white;
+  font-weight: 500;
+  background-color: #35B8BD;
+  border: 0;
+  border: 1px solid #35B8BD;
+  padding: 0.5rem;
+}
+
+.btn-profile-lg:hover {
+  color: #35B8BD;
+  background-color: transparent;
+  border: 1px solid #35B8BD;
+}
+
+.btn-profile-lg:focus {
+  background-color: #35B8BD;
+}
+
+.btn-profile-md {
+  color: white;
+  font-weight: 500;
+  background-color: #35B8BD;
+  border: 0;
+  border: 1px solid #35B8BD;
+}
+
+.btn-profile-md:hover {
+  color: #35B8BD;
+  background-color: transparent;
+  border: 1px solid #35B8BD;
+}
+
+.btn-profile-md:focus {
+  background-color: #35B8BD;
+}
+
 .hero-header {
   background: url("/images/laptop-bg.png");
   background-attachment: fixed;
@@ -10637,43 +10674,6 @@ body {
 .dashboard .dashboard-link .active {
   color: #35B8BD;
   font-weight: bolder;
-}
-
-.dashboard .btn-profile-lg {
-  color: white;
-  font-weight: 500;
-  background-color: #35B8BD;
-  border: 0;
-  border: 1px solid #35B8BD;
-  padding: 0.5rem;
-}
-
-.dashboard .btn-profile-lg:hover {
-  color: #35B8BD;
-  background-color: transparent;
-  border: 1px solid #35B8BD;
-}
-
-.dashboard .btn-profile-lg:focus {
-  background-color: #35B8BD;
-}
-
-.dashboard .btn-profile-md {
-  color: white;
-  font-weight: 500;
-  background-color: #35B8BD;
-  border: 0;
-  border: 1px solid #35B8BD;
-}
-
-.dashboard .btn-profile-md:hover {
-  color: #35B8BD;
-  background-color: transparent;
-  border: 1px solid #35B8BD;
-}
-
-.dashboard .btn-profile-md:focus {
-  background-color: #35B8BD;
 }
 
 .edit-profile {

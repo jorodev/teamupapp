@@ -17,24 +17,34 @@
     </div>
     @endif
     <section class="view-projects container">
-        <h1 class="text-center pt-4">All Projects</h1>
+        <div class="row mt-4">
+            <div class="col-6">
+                <h2 class="">All Projects</h3>
+            </div>
+            @if (Auth::check())
+                <div class="col-6">
+                    <a href="{{ URL('projects/create') }}" class="btn btn-primary btn-profile-md float-right">Create project</a>
+                </div>
+            @endif
+        </div>
+        <hr class="divider hidden-xs">
         <div class="row justify-content-center py-4">
             @if(count($projects) != 0)
                 @foreach($projects as $project)
-                    <div class="card mx-4 mb-4" style="width: 18rem;">
+                    <div class="card mx-4 mb-4" style="width: 20.5rem;">
                         <img class="card-img-top" src="{{ asset("images/$project->image") }}" alt="project image">
                         <div class="card-body">
-                        <h5 class="card-title"><a href="/projects/{{ $project->id }}">{{ $project->title }}</a></h5>
-                        <p class="card-text">by <span><a href="#">{{ $project->user->name }}</a></span></p>
+                            <h5 class="card-title mb-1"><a class="text-dark font-weight-bold" href="/projects/{{ $project->id }}">{{ $project->title }}</a></h5>
+                            <small>by <a href="#">{{ $project->user->name }}</a></small>
+                            <div class="card-text mt-2">
+                                <img src="http://via.placeholder.com/35x35" alt="" class="rounded-circle">
+                            </div>
                         </div>
                     </div>
                 @endforeach
             @else
                 <div>There's no projects created yet!</div>
             @endif
-        </div>
-        <div class="row">
-            <a href="projects/create" class="btn btn-primary btn-profile mx-auto m-4">Create project</a>
         </div>
     </section>
 @endsection

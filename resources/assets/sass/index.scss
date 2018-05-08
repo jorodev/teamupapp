@@ -44,6 +44,43 @@ body {
     }
 }
 
+.btn-profile-lg {
+    color: white;
+    font-weight: 500;
+    background-color: $app-secondary-color;
+    border: 0;
+    border: 1px solid $app-secondary-color;
+    padding: 0.5rem;
+
+    &:hover {
+        color: $app-secondary-color;
+        background-color: transparent;
+        border: 1px solid $app-secondary-color;
+    }
+
+    &:focus {
+        background-color: $app-secondary-color;
+    }
+}
+
+.btn-profile-md {
+    color: white;
+    font-weight: 500;
+    background-color: $app-secondary-color;
+    border: 0;
+    border: 1px solid $app-secondary-color;
+
+    &:hover {
+        color: $app-secondary-color;
+        background-color: transparent;
+        border: 1px solid $app-secondary-color;
+    }
+
+    &:focus {
+        background-color: $app-secondary-color;
+    }
+}
+
 // Start hero-header
 // -------------------------------
 
