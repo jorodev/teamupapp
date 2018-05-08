@@ -15,33 +15,40 @@
         }
     }
 
-    .btn-profile {
+    .btn-profile-lg {
         color: white;
+        font-weight: 500;
         background-color: $app-secondary-color;
         border: 0;
+        border: 1px solid $app-secondary-color;
         padding: 0.5rem;
 
         &:hover {
-            color: white;
-            font-weight: 500;
+            color: $app-secondary-color;
+            background-color: transparent;
+            border: 1px solid $app-secondary-color;
         }
 
         &:focus {
             background-color: $app-secondary-color;
         }
     }
-}
 
-.btn-view {
-    padding: 0.1rem 0;
-    background-color: whitesmoke;
-    font-size: 12px;
-    font-weight: bold;
-    width: 50px;
-    color: black;
-    border: 1px solid gray;
+    .btn-profile-md {
+        color: white;
+        font-weight: 500;
+        background-color: $app-secondary-color;
+        border: 0;
+        border: 1px solid $app-secondary-color;
 
-    &:hover {
-        color: black;
+        &:hover {
+            color: $app-secondary-color;
+            background-color: transparent;
+            border: 1px solid $app-secondary-color;
+        }
+
+        &:focus {
+            background-color: $app-secondary-color;
+        }
     }
 }

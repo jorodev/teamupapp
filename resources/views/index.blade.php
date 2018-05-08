@@ -8,7 +8,7 @@
                 <div class="col">
                     <h1 class="display-3">TeamUp</h1>
                     <h2 class="lead">Find team members for new exciting software projects </h2>
-                    <a class="btn btn-primary btn-custom" href="{{ route('register') }}">Join us</a>
+                    <a class="btn btn-primary btn-custom-lg" href="{{ route('register') }}">Join us</a>
                 </div>
             </div>
         </div>

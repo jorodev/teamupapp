@@ -12,7 +12,7 @@
                     <h3 class="">Projects</h3>
                 </div>
                 <div class="col-6">
-                    <a href="{{ URL('projects/create') }}" class="btn btn-primary btn-profile float-right">Create project</a>
+                    <a href="{{ URL('projects/create') }}" class="btn btn-primary btn-profile-md float-right">Create project</a>
                 </div>
             </div>
             <hr class="divider hidden-xs">
@@ -33,7 +33,7 @@
                                 <tr>
                                 <td scope="col">{{ $project->title }}</td>
                                     <td>imgs</td>
-                                    <td class="text-right"><a href="#" class="btn btn-view">View</a></td>
+                                    <td class="text-right"><a href="/projects/{{ $project->id }}" class="btn btn-outline-secondary btn-sm">View</a> <a href="#" class="btn btn-outline-secondary btn-sm">Dashboard</a></td>
                                 </tr>
                             </tbody>
                             @endforeach
@@ -56,7 +56,7 @@
                             <tr>
                                 <td scope="col">Project 1</td>
                                 <td>imgs</td>
-                                <td class="text-right"><a href="#" class="btn btn-view">View</a></td>
+                                <td class="text-right"><a href="/projects/{{ $project->id }}" class="btn btn-outline-secondary btn-sm">View</a> <a href="#" class="btn btn-outline-secondary btn-sm">Dashboard</a></td>
                             </tr>
                         </tbody>
                     </table>

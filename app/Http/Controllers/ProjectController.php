@@ -117,7 +117,7 @@ class ProjectController extends Controller
     {
         $project = Project::find($id);
         $project->delete();
-        File::delete(public_path() .  '/images/' . $project->image);
+        File::delete(public_path() . '/images/' . $project->image);
 
         return redirect('/projects')->with('success', 'Project deleted successfully!');
     }

@@ -2,6 +2,48 @@ body {
     background-color: white;
 }
 
+.btn-custom-lg {
+    margin-top: 1rem;
+    background-color: $app-secondary-color;
+    padding: 0.375rem 3rem;
+    border: 1px solid $app-secondary-color;
+    border-radius: 0;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+        background-color: rgba($app-secondary-color, 0.25);
+        border-color: $app-secondary-color;
+    }
+}
+
+.btn-custom-md {
+    margin-top: 1rem;
+    background-color: $app-secondary-color;
+    padding: 0.375rem 2rem;
+    border: 1px solid $app-secondary-color;
+    border-radius: 0;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+        background-color: rgba($app-secondary-color, 0.25);
+        border-color: $app-secondary-color;
+    }
+}
+
+.btn-custom-sm {
+    margin-top: 1rem;
+    background-color: $app-secondary-color;
+    padding: 0.375rem 1rem;
+    border: 1px solid $app-secondary-color;
+    border-radius: 0;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+        background-color: rgba($app-secondary-color, 0.25);
+        border-color: $app-secondary-color;
+    }
+}
+
 // Start hero-header
 // -------------------------------
 
@@ -15,19 +57,6 @@ body {
     
     .heading {
         padding: 9.7rem 0rem;
-
-        .btn-custom {
-            margin-top: 1rem;
-            background-color: $app-secondary-color;
-            padding: 0.375rem 3rem;
-            border: 1px solid $app-secondary-color;
-            border-radius: 0;
-            transition: background-color 0.25s ease-in-out;
-
-            &:hover {
-                background-color: rgba($app-secondary-color, 0.25)
-            }
-        }
     }
 }
 

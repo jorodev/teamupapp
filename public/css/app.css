@@ -10482,6 +10482,51 @@ body {
   background-color: white;
 }
 
+.btn-custom-lg {
+  margin-top: 1rem;
+  background-color: #35B8BD;
+  padding: 0.375rem 3rem;
+  border: 1px solid #35B8BD;
+  border-radius: 0;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btn-custom-lg:hover {
+  background-color: rgba(53, 184, 189, 0.25);
+  border-color: #35B8BD;
+}
+
+.btn-custom-md {
+  margin-top: 1rem;
+  background-color: #35B8BD;
+  padding: 0.375rem 2rem;
+  border: 1px solid #35B8BD;
+  border-radius: 0;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btn-custom-md:hover {
+  background-color: rgba(53, 184, 189, 0.25);
+  border-color: #35B8BD;
+}
+
+.btn-custom-sm {
+  margin-top: 1rem;
+  background-color: #35B8BD;
+  padding: 0.375rem 1rem;
+  border: 1px solid #35B8BD;
+  border-radius: 0;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btn-custom-sm:hover {
+  background-color: rgba(53, 184, 189, 0.25);
+  border-color: #35B8BD;
+}
+
 .hero-header {
   background: url("/images/laptop-bg.png");
   background-attachment: fixed;
@@ -10492,20 +10537,6 @@ body {
 
 .hero-header .heading {
   padding: 9.7rem 0rem;
-}
-
-.hero-header .heading .btn-custom {
-  margin-top: 1rem;
-  background-color: #35B8BD;
-  padding: 0.375rem 3rem;
-  border: 1px solid #35B8BD;
-  border-radius: 0;
-  -webkit-transition: background-color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
-}
-
-.hero-header .heading .btn-custom:hover {
-  background-color: rgba(53, 184, 189, 0.25);
 }
 
 .statistics {
@@ -10608,34 +10639,41 @@ body {
   font-weight: bolder;
 }
 
-.dashboard .btn-profile {
+.dashboard .btn-profile-lg {
   color: white;
+  font-weight: 500;
   background-color: #35B8BD;
   border: 0;
+  border: 1px solid #35B8BD;
   padding: 0.5rem;
 }
 
-.dashboard .btn-profile:hover {
-  color: white;
-  font-weight: 500;
+.dashboard .btn-profile-lg:hover {
+  color: #35B8BD;
+  background-color: transparent;
+  border: 1px solid #35B8BD;
 }
 
-.dashboard .btn-profile:focus {
+.dashboard .btn-profile-lg:focus {
   background-color: #35B8BD;
 }
 
-.btn-view {
-  padding: 0.1rem 0;
-  background-color: whitesmoke;
-  font-size: 12px;
-  font-weight: bold;
-  width: 50px;
-  color: black;
-  border: 1px solid gray;
+.dashboard .btn-profile-md {
+  color: white;
+  font-weight: 500;
+  background-color: #35B8BD;
+  border: 0;
+  border: 1px solid #35B8BD;
 }
 
-.btn-view:hover {
-  color: black;
+.dashboard .btn-profile-md:hover {
+  color: #35B8BD;
+  background-color: transparent;
+  border: 1px solid #35B8BD;
+}
+
+.dashboard .btn-profile-md:focus {
+  background-color: #35B8BD;
 }
 
 .edit-profile {
