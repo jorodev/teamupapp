@@ -84,7 +84,18 @@
                         b
                     </div>
                     <div class="tab-pane fade" id="nav-profileimg" role="tabpanel" aria-labelledby="nav-profileimg-tab">
-                        c
+                        <form action="/dashboard/profile/edit#nav-profileimg" method="POST" enctype="multipart/form-data">
+                          @csrf
+                          <div class="form-group">
+                              <label name="profile_image">Upload profile image:</label>
+                              <input type="file" name="profile_image" class="form-control-file" id="profile_image">
+                          </div>
+                          <div class="form-group py-4">
+                              <button type="submit" class="btn btn-primary btn-profile-md">Upload image</button>
+                              <button type="submit" class="btn btn-danger">Delete image</button>
+                          </div>
+                      </form>
+                  </div>
                     </div>
                     <div class="tab-pane fade" id="nav-socials" role="tabpanel" aria-labelledby="nav-socials-tab">
                         d
