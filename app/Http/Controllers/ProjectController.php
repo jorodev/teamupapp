@@ -116,9 +116,13 @@ class ProjectController extends Controller
     public function destroy($id)
     {
         $project = Project::find($id);
-        $project->delete();
-        File::delete(public_path() . '/images/' . $project->image);
+        if(Auth::id() == $project->user_id) {
+            $project->delete();
+            File::delete(public_path() . '/images/' . $project->image);
 
-        return redirect('/projects')->with('success', 'Project deleted successfully!');
+            return redirect('/projects')->with('success', 'Project deleted successfully!');
+        } else {
+            return back()->with('error', "You're not the owner of this project");
+        }
     }
 }

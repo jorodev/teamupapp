@@ -7,14 +7,10 @@
         </div>
     @endif
 
-    @if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
+    @if (Session::has('error'))
+        <div class="alert alert-danger text-center">
+            {{ Session::get('error') }}
+        </div>
     @endif
     <section class="view-projects container">
         <div class="row mt-4">
