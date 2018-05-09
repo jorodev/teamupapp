@@ -20,59 +20,65 @@
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                      @foreach($users as $user)
                       <form> 
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label for="inputFirstName">First name</label>
-                              <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputFirstName">First name</label>
+                            <input type="text" class="form-control" id="inputFirstName" value="{{ $user->first_name }}">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputFirstName">Last name</label>
+                            <input type="text" class="form-control" id="inputLastName" value="{{ $user->last_name }}">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputCountry">Country</label>
+                            <select id="inputCountry" class="form-control">
+                              <option selected>
+                                @if ($user->country)
+                                  {{ $user->country }}
+                                @else
+                                  {{ 'Choose...' }}
+                                @endif
+                              </option>
+                              <option>Bulgaria</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity" value="{{ $user->city }}">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputOccupation">Occupation</label>
+                          <input type="text" class="form-control" id="inputOccupation" value="{{ $user->occupation }}">
+                        </div>
+                        <div class="form-group">
+                          <label for="textArea">Description</label>
+                          <textarea class="form-control" id="textArea" rows="10">{{ $user->description }}</textarea>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check gender-check">
+                            <div class="row">
+                              <label for="gender">Gender</label>
                             </div>
-                            <div class="form-group col-md-6">
-                              <label for="inputFirstName">Last name</label>
-                              <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                            <div class="form-group">
+                              <input class="form-check-input position-static" type="radio" name="gender" value="male" {{ $user->gender == 'm' ? 'checked' : ''}}> Male
+                            </div>
+                            <div class="form-group">
+                              <input class="form-check-input position-static" type="radio" name="gender" value="female" {{ $user->gender == 'f' ? 'checked' : ''}}> Female
                             </div>
                           </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label for="inputCountry">Country</label>
-                              <select id="inputCountry" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>Bulgaria</option>
-                              </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label for="inputCity">City</label>
-                              <input type="text" class="form-control" id="inputCity" placeholder="City">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="inputOccupation">Occupation</label>
-                            <input type="text" class="form-control" id="inputOccupation">
-                          </div>
-                          <div class="form-group">
-                            <label for="textArea">Description</label>
-                            <textarea class="form-control" id="textArea" rows="10"></textarea>
-                          </div>
-                          <div class="form-group">
-                            <div class="form-check gender-check">
-                              <div class="row">
-                                <label for="gender">Gender</label>
-                              </div>
-                              <div class="form-group">
-                                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="Male" aria-label="male">
-                                Male
-                              </div>
-                              <div class="form-group">
-                                <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="Female" aria-label="female">
-                                Female
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="inputDateOfBirth">Date of Brth</label>
-                            <input type="text" class="form-control" id="inputDateOfBirth" placeholder="DD/MM/YYYY">
-                          </div>
-                          <button type="submit" class="btn btn-primary btn-profile mt-4">Save profile information</button>
-                        </form>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputDateOfBirth">Date of Birth</label>
+                          <input type="text" class="form-control" id="inputDateOfBirth" value="{{ $user->date_of_birth }}" placeholder="dd/mm/yyyy">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-profile mt-4">Save profile information</button>
+                      </form>
+                      @endforeach
                     </div>
                     <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
                         b
@@ -86,7 +92,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 </section>
 @endsection

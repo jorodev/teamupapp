@@ -22,10 +22,12 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/dashboard/messages', 'DashboardController@showMessages')->name('showMessages');
 Route::get('/dashboard/projects', 'DashboardController@showProjects')->name('showProjects');
 Route::get('/dashboard/lookups', 'DashboardController@showLookups')->name('showLookups');
-Route::get('/dashboard/profile/edit', 'DashboardController@editProfile')->name('editProfile');
 Route::get('/dashboard/settings', 'DashboardController@showSettings')->name('showSettings');
 
-Route::get('/profile/name', 'DashboardController@showProfile')->name('showProfile');
+// Profiles
+Route::get('/profile/{name}', 'DashboardController@showProfile')->name('showProfile');
+Route::get('/dashboard/profile/edit', 'ProfileController@create')->name('editProfileInformation');
+Route::post('/dashboard/profile/edit', 'ProfileController@update')->name('updateProfile');
 
 // Projects
 Route::get('/projects', 'ProjectController@index')->name('projects');

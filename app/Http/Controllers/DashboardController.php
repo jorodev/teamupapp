@@ -46,11 +46,6 @@ class DashboardController extends Controller
         return view('dashboard.lookups');
     }
 
-    public function editProfile()
-    {
-        return view('dashboard.editprofile');
-    }
-
     public function showSettings()
     {
         return view('dashboard.settings');
