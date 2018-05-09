@@ -18,11 +18,11 @@
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col-sm-12 col-md-4">
-                    <div class="col display-4">1</div>
+                    <div class="col display-4">{{ $totalUsers }}</div>
                     <div class="col">Users</div>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <div class="col display-4">0</div>
+                    <div class="col display-4">{{ $totalProjects }}</div>
                     <div class="col">Projects</div>
                 </div>
                 <div class="col-sm-12 col-md-4">

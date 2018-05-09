@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Project;
+use Auth;
 
 class DashboardController extends Controller
 {
@@ -25,7 +26,6 @@ class DashboardController extends Controller
      */
     public function index()
     {
-
         return view('dashboard.mypage');
     }
 
@@ -36,7 +36,7 @@ class DashboardController extends Controller
 
     public function showProjects()
     {
-        $projects = User::find(1)->project;
+        $projects = User::find(Auth::id())->project;
 
         return view('dashboard.projects', compact('projects'));
     }
