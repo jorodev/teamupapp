@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Auth;
 
 class ProfileController extends Controller
 {
@@ -24,9 +25,9 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        $users = User::select('first_name', 'last_name', 'country', 'city', 'occupation', 'description', 'gender', 'date_of_birth')->get();
+        $user = Auth::user();
 
-        return view('dashboard.editprofile', compact('users'));
+        return view('dashboard.editprofile', compact('user'));
     }
 
     /**
@@ -69,9 +70,21 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $user = Auth::user();
+    
+        $user->first_name = $request->input('first_name');
+        $user->last_name = $request->input('last_name');
+        $user->city = $request->input('city');
+        $user->occupation = $request->input('occupation');
+        $user->description =$request->input('description');
+        $user->date_of_birth = $request->input('date_of_birth');
+
+        $user->save();
+  
+        // Flash::message('Your account has been updated!');
+        return redirect('/dashboard/profile/edit')->with('success', "Profile information updated successfully!");
     }
 
     /**

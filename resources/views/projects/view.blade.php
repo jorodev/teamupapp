@@ -1,17 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    @if (Session::has('success'))
-        <div class="alert alert-info text-center">
-            {{ Session::get('success') }}
-        </div>
-    @endif
+    @include('layouts.flashMessages')
 
-    @if (Session::has('error'))
-        <div class="alert alert-danger text-center">
-            {{ Session::get('error') }}
-        </div>
-    @endif
     <section class="view-projects container">
         <div class="row mt-4">
             <div class="col-6">
