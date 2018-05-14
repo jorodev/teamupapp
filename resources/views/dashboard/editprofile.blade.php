@@ -92,13 +92,14 @@
                     <div class="tab-pane fade" id="nav-profileimg" role="tabpanel" aria-labelledby="nav-profileimg-tab">
                         <form action="/dashboard/profile/edit#nav-profileimg" method="POST" enctype="multipart/form-data">
                           @csrf
+                          {{ method_field('PUT') }}
                           <div class="form-group">
                               <label name="profile_image">Upload profile image:</label>
                               <input type="file" name="profile_image" class="form-control-file" id="profile_image">
                           </div>
                           <div class="form-group py-4">
                               <button type="submit" class="btn btn-primary btn-profile-md">Upload image</button>
-                              <button type="submit" class="btn btn-danger">Delete image</button>
+                              {{-- <button type="submit" class="btn btn-danger">Delete image</button> --}}
                           </div>
                       </form>
                     </div>

@@ -5,14 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Auth;
+use Image;
 
 class ProfileController extends Controller
 {
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function displayProfileInfo()
     {
         $user = Auth::user();
@@ -20,13 +16,6 @@ class ProfileController extends Controller
         return view('dashboard.editprofile', compact('user'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function updateProfileInfo(Request $request)
     {
         $user = Auth::user();
@@ -42,6 +31,20 @@ class ProfileController extends Controller
   
         // Flash::message('Your account has been updated!');
         return redirect('/dashboard/profile/edit')->with('success', "Profile information updated successfully!");
+    }
+
+    public function profileImage(Request $request) {
+        $user = Auth::user();
+
+        $image = $request->file('profile_image');
+        $filename = time() . '-' . $image->getClientOriginalName();
+        $location = public_path('images/' . $filename);
+        Image::make($image)->resize(150, 150)->save($location);
+
+        $user->image = $filename;
+        $user->save();
+
+        return redirect('/dashboard/profile/edit')->with('success', "Profile Image updated successfully!");
     }
 
 }

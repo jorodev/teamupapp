@@ -26,6 +26,7 @@ Route::get('/dashboard/settings', 'DashboardController@showSettings')->name('sho
 Route::get('/profile/{name}', 'DashboardController@showProfile')->name('showProfile');
 Route::get('/dashboard/profile/edit', 'ProfileController@displayProfileInfo')->name('editProfile');
 Route::put('/dashboard/profile/edit', 'ProfileController@updateProfileInfo')->name('updateProfileInfo');
+Route::put('dashboard/profile/edit', 'ProfileController@profileImage')->name('profileImage');
 
 // Projects
 Route::get('/projects', 'ProjectController@index')->name('projects');
