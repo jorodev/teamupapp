@@ -8,6 +8,7 @@ use App\Project;
 use Auth;
 use Image;
 use File;
+use Input;
 
 class ProjectController extends Controller
 {

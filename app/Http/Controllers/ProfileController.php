@@ -34,17 +34,31 @@ class ProfileController extends Controller
     }
 
     public function profileImage(Request $request) {
-        $user = Auth::user();
+        $user = Auth::user();   
 
-        $image = $request->file('profile_image');
-        $filename = time() . '-' . $image->getClientOriginalName();
-        $location = public_path('images/' . $filename);
-        Image::make($image)->resize(150, 150)->save($location);
+        if($request->hasFile('profile_image')) {
+            $currentUserImage = $user->image;
 
-        $user->image = $filename;
-        $user->save();
+            $image = $request->file('profile_image');
+            $filename = time() . '-' . $image->getClientOriginalName();
+            $location = public_path('images/' . $filename);
+            Image::make($image)->resize(150, 150)->save($location);
 
-        return redirect('/dashboard/profile/edit')->with('success', "Profile Image updated successfully!");
+            $user->image = $filename;
+
+            if ($currentUserImage != "no-image.png") {
+                unlink(public_path('images/' . $currentUserImage));
+                $user->save();
+
+                return redirect('/dashboard/profile/edit')->with('success', "Profile image updated successfully!");
+            } else if ($currentUserImage == "no-image.png") {
+                $user->save();
+
+                return redirect('/dashboard/profile/edit')->with('success', "Profile image updated successfully!");
+            } else {
+                return redirect('/dashboard/profile/edit')->with('error', "Profile image is incorrect! Try again!!");
+            }
+        }
     }
 
 }
