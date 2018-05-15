@@ -33,7 +33,7 @@ class ProfileController extends Controller
         return redirect('/dashboard/profile/edit')->with('success', "Profile information updated successfully!");
     }
 
-    public function profileImage(Request $request) {
+    public function updateProfileImage(Request $request) {
         $user = Auth::user();   
 
         if($request->hasFile('profile_image')) {
@@ -56,9 +56,24 @@ class ProfileController extends Controller
 
                 return redirect('/dashboard/profile/edit')->with('success', "Profile image updated successfully!");
             } else {
-                return redirect('/dashboard/profile/edit')->with('error', "Profile image is incorrect! Try again!!");
+                return redirect('/dashboard/profile/edit')->with('error', "Profile image is incorrect! Try again!");
             }
         }
     }
 
+    public function deleteProfileImage(Request $request) {
+        $user = Auth::user();
+        $currentUserImage = $user->image;
+
+        if ($currentUserImage != "no-image.png") {
+            unlink(public_path('images/' . $currentUserImage));
+            
+            $user->image = "no-image.png";
+            $user->save();
+
+            return redirect('/dashboard/profile/edit')->with('success', "Profile image deleted successfully!");
+        } else {
+            return redirect('/dashboard/profile/edit')->with('error', "Your profile image is default one");
+        }
+    }
 }

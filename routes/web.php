@@ -26,7 +26,8 @@ Route::get('/dashboard/settings', 'DashboardController@showSettings')->name('sho
 Route::get('/profile/{name}', 'DashboardController@showProfile')->name('showProfile');
 Route::get('/dashboard/profile/edit', 'ProfileController@displayProfileInfo')->name('editProfile');
 Route::put('/dashboard/profile/edit', 'ProfileController@updateProfileInfo')->name('updateProfileInfo');
-Route::put('dashboard/profile/edit', 'ProfileController@profileImage')->name('profileImage');
+Route::put('dashboard/profile/edit', 'ProfileController@updateProfileImage')->name('updateProfileImage');
+Route::delete('dashboard/profile/edit', 'ProfileController@deleteProfileImage')->name('deleteProfileImage');
 
 // Projects
 Route::get('/projects', 'ProjectController@index')->name('projects');
