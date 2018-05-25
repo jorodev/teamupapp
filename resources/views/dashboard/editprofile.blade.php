@@ -109,7 +109,44 @@
                     </div>
                     {{-- Socials Tab --}}
                     <div class="tab-pane fade" id="nav-socials" role="tabpanel" aria-labelledby="nav-socials-tab">
-                        Socials
+                      <h5>Add links to your social accounts on your profile page</h5>
+                      <form class="pt-4" action="/dashboard/profile/edit" method="post">
+                        @csrf
+                        {{ method_field('PUT') }}
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label>Facebook</label>
+                            <input name="social_facebook" type="text" class="form-control" id="inputSocialFacebook" value="">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label>Twitter</label>
+                            <input name="social_twitter" type="text" class="form-control" id="inputSocialTwitter" value="">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label>Linkedin</label>
+                            <input name="social_linkedin" type="text" class="form-control" id="inputSocialLinkedin" value="">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label>Github</label>
+                            <input name="social_github" type="text" class="form-control" id="inputSocialGithub" value="">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label>Youtube</label>
+                            <input name="social_youtube" type="text" class="form-control" id="inputSocialYoutube" value="">
+                          </div>
+                        </div>
+                        <div class="form-group py-4">
+                          <button type="submit" class="btn btn-primary btn-profile-md">Save</button>
+                        </div>
+                      </form>
                     </div>
                 </div>
             </div>
