@@ -29,15 +29,7 @@
                         <tbody>
                             <tr>
                                 <td scope="col">Look-up 1</td>
-                                <td class="text-right"><a href="#" class="btn btn-view">View</a></td>
-                            </tr>
-                            <tr>
-                                <td scope="col">Look-up 2</td>
-                                <td class="text-right"><a href="#" class="btn btn-view">View</a></td>
-                            </tr>
-                            <tr>
-                                <td scope="col">Look-up 3</td>
-                                <td class="text-right"><a href="#" class="btn btn-view">View</a></td>
+                                <td class="text-right"><a href="#" class="btn btn-outline-secondary btn-sm">View</a> <a href="#" class="btn btn-outline-secondary btn-sm">Dashboard</a></td>
                             </tr>
                         </tbody>
                     </table>
