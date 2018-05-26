@@ -22,7 +22,6 @@
                 <div class="tab-content" id="nav-tabContent">
                     {{-- Profile Tab --}}
                     <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                      {{-- @foreach($users as $user) --}}
                         <form action="/dashboard/profile/edit" method="POST">
                           @csrf
                           {{ method_field('PUT') }}
@@ -82,7 +81,6 @@
                           </div>
                           <button type="submit" class="btn btn-primary btn-profile mt-4">Save profile information</button>
                         </form>
-                        {{-- @endforeach --}}
                     </div>
                     {{-- Skills Tab --}}
                     <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
@@ -116,31 +114,31 @@
                         <div class="form-row">
                           <div class="form-group col-md-12">
                             <label>Facebook</label>
-                            <input name="social_facebook" type="text" class="form-control" id="inputSocialFacebook" value="">
+                            <input name="social_facebook" type="text" class="form-control" id="inputSocialFacebook" value="{{ Auth::user()->facebook }}">
                           </div>
                         </div>
                         <div class="form-row">
                           <div class="form-group col-md-12">
                             <label>Twitter</label>
-                            <input name="social_twitter" type="text" class="form-control" id="inputSocialTwitter" value="">
+                            <input name="social_twitter" type="text" class="form-control" id="inputSocialTwitter" value="{{ Auth::user()->twitter }}">
                           </div>
                         </div>
                         <div class="form-row">
                           <div class="form-group col-md-12">
                             <label>Linkedin</label>
-                            <input name="social_linkedin" type="text" class="form-control" id="inputSocialLinkedin" value="">
+                            <input name="social_linkedin" type="text" class="form-control" id="inputSocialLinkedin" value="{{ Auth::user()->linkedin }}">
                           </div>
                         </div>
                         <div class="form-row">
                           <div class="form-group col-md-12">
                             <label>Github</label>
-                            <input name="social_github" type="text" class="form-control" id="inputSocialGithub" value="">
+                            <input name="social_github" type="text" class="form-control" id="inputSocialGithub" value="{{ Auth::user()->github }}">
                           </div>
                         </div>
                         <div class="form-row">
                           <div class="form-group col-md-12">
                             <label>Youtube</label>
-                            <input name="social_youtube" type="text" class="form-control" id="inputSocialYoutube" value="">
+                            <input name="social_youtube" type="text" class="form-control" id="inputSocialYoutube" value="{{ Auth::user()->youtube }}">
                           </div>
                         </div>
                         <div class="form-group py-4">

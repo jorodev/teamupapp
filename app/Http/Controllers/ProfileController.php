@@ -76,4 +76,18 @@ class ProfileController extends Controller
             return redirect('/dashboard/profile/edit')->with('error', "Your profile image is default one");
         }
     }
+
+    public function updateSocialLinks(Request $request) {
+        $user = Auth::user();
+    
+        $user->facebook = $request->input('social_facebook');
+        $user->twitter = $request->input('social_twitter');
+        $user->linkedin = $request->input('social_linkedin');
+        $user->github = $request->input('social_github');
+        $user->youtube =$request->input('social_youtube');
+
+        $user->save();
+  
+        return redirect('/dashboard/profile/edit')->with('success', "Social links updated successfully!");
+    }
 }
