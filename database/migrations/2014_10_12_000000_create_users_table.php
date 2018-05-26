@@ -27,6 +27,11 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('image')->default('no-image.png');
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('github')->nullable();
+            $table->string('youtube')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
