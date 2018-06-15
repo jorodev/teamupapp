@@ -33,7 +33,8 @@ class ProfileController extends Controller
         return redirect('/dashboard/profile/edit')->with('success', "Profile information updated successfully!");
     }
 
-    public function updateProfileImage(Request $request) {
+    public function updateProfileImage(Request $request) 
+    {
         $user = Auth::user();   
 
         if($request->hasFile('profile_image')) {
@@ -61,7 +62,8 @@ class ProfileController extends Controller
         }
     }
 
-    public function deleteProfileImage(Request $request) {
+    public function deleteProfileImage(Request $request) 
+    {
         $user = Auth::user();
         $currentUserImage = $user->image;
 
@@ -77,14 +79,15 @@ class ProfileController extends Controller
         }
     }
 
-    public function updateSocialLinks(Request $request) {
+    public function updateSocialLinks(Request $request) 
+    {
         $user = Auth::user();
     
         $user->facebook = $request->input('social_facebook');
         $user->twitter = $request->input('social_twitter');
         $user->linkedin = $request->input('social_linkedin');
         $user->github = $request->input('social_github');
-        $user->youtube =$request->input('social_youtube');
+        $user->youtube = $request->input('social_youtube');
 
         $user->save();
   

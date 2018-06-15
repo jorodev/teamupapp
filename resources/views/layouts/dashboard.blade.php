@@ -9,6 +9,6 @@
         <a class="nav-link dashboard-link {{ Route::currentRouteNamed('showSettings') ? 'dashboard-nav-active' : '' }}" href="/dashboard/settings">Settings</a>
     </ul>
     <ul class="list-unstyled flex-column" aria-orientation="vertical">
-        <a class="nav-link btn btn-primary btn-profile-lg" href="profile/name">Public profile</a>
+        <a class="nav-link btn btn-primary btn-profile-lg" href="/profile/name">Public profile</a>
     </ul>
 </div>

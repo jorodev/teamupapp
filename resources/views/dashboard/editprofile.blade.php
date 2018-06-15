@@ -22,7 +22,7 @@
                 <div class="tab-content" id="nav-tabContent">
                     {{-- Profile Tab --}}
                     <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <form action="/dashboard/profile/edit" method="POST">
+                        <form action="/dashboard/profile/editInfo" method="POST">
                           @csrf
                           {{ method_field('PUT') }}
                           <div class="form-row">
@@ -79,7 +79,9 @@
                             <label for="inputDateOfBirth">Date of Birth</label>
                             <input name="date_of_birth" type="text" class="form-control" id="inputDateOfBirth" value="{{ Auth::user()->date_of_birth }}" placeholder="dd/mm/yyyy">
                           </div>
-                          <button type="submit" class="btn btn-primary btn-profile mt-4">Save profile information</button>
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-profile-md mt-4">Save profile information</button>
+                          </div>
                         </form>
                     </div>
                     {{-- Skills Tab --}}
@@ -88,7 +90,7 @@
                     </div>
                     {{-- Profile Image Tab --}}
                     <div class="tab-pane fade" id="nav-profileimg" role="tabpanel" aria-labelledby="nav-profileimg-tab">
-                      <form action="/dashboard/profile/edit#nav-profileimg" method="POST" enctype="multipart/form-data">
+                      <form action="/dashboard/profile/editImage" method="POST" enctype="multipart/form-data">
                         @csrf
                         {{ method_field('PUT') }}
                         <div class="form-group">
@@ -99,16 +101,18 @@
                             <button type="submit" class="btn btn-primary btn-profile-md">Upload image</button>
                         </div>
                       </form>
-                      <form action="/dashboard/profile/edit#nav-profileimg" method="POST">
+                      <form action="/dashboard/profile/deleteImage" method="POST">
                         @csrf
                         {{ method_field('DELETE') }}
-                        <button type="submit" class="btn btn-danger">Delete current image</button>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-danger">Delete current image</button>
+                        </div>
                       </form>
                     </div>
                     {{-- Socials Tab --}}
                     <div class="tab-pane fade" id="nav-socials" role="tabpanel" aria-labelledby="nav-socials-tab">
                       <h5>Add links to your social accounts on your profile page</h5>
-                      <form class="pt-4" action="/dashboard/profile/edit" method="post">
+                      <form class="pt-4" action="/dashboard/profile/editSocials" method="POST">
                         @csrf
                         {{ method_field('PUT') }}
                         <div class="form-row">

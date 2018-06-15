@@ -17,18 +17,17 @@ Auth::routes();
 
 // Dashboard
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-Route::get('/dashboard/messages', 'DashboardController@showMessages')->name('showMessages');
 Route::get('/dashboard/projects', 'DashboardController@showProjects')->name('showProjects');
 Route::get('/dashboard/lookups', 'DashboardController@showLookups')->name('showLookups');
 Route::get('/dashboard/settings', 'DashboardController@showSettings')->name('showSettings');
 
-// Profiles
+// Edit Profile
 Route::get('/profile/{name}', 'DashboardController@showProfile')->name('showProfile');
 Route::get('/dashboard/profile/edit', 'ProfileController@displayProfileInfo')->name('editProfile');
-Route::put('/dashboard/profile/edit', 'ProfileController@updateProfileInfo')->name('updateProfileInfo');
-Route::put('dashboard/profile/edit', 'ProfileController@updateProfileImage')->name('updateProfileImage');
-Route::delete('dashboard/profile/edit', 'ProfileController@deleteProfileImage')->name('deleteProfileImage');
-Route::put('dashboard/profile/edit', 'ProfileController@updateSocialLinks')->name('updateSocialLinks');
+Route::put('/dashboard/profile/editInfo', 'ProfileController@updateProfileInfo')->name('updateProfileInfo');
+Route::put('/dashboard/profile/editImage', 'ProfileController@updateProfileImage')->name('updateProfileImage');
+Route::delete('/dashboard/profile/deleteImage', 'ProfileController@deleteProfileImage')->name('deleteProfileImage');
+Route::put('/dashboard/profile/editSocials', 'ProfileController@updateSocialLinks')->name('updateSocialLinks');
 
 // Projects
 Route::get('/projects', 'ProjectController@index')->name('projects');
