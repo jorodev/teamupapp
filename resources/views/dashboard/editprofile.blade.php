@@ -37,8 +37,8 @@
                           </div>
                           <div class="form-row">
                             <div class="form-group col-md-6">
-                              <label for="inputCountry">Country</label>
-                              <select id="inputCountry" class="form-control">
+                              <label>Country</label>
+                              <select name="country" id="country" class="form-control">
                                 <option selected>
                                   @if ($user->country)
                                     {{ $user->country }}
@@ -46,7 +46,9 @@
                                     {{ 'Choose...' }}
                                   @endif
                                 </option>
-                                <option>Bulgaria</option>
+                                <option name="Bulgaria">Bulgaria</option>
+                                <option name="Romania">Romania</option>
+                                <option name="Turkey">Turkey</option>
                               </select>
                             </div>
                             <div class="form-group col-md-6">
@@ -65,19 +67,19 @@
                           <div class="form-group">
                             <div class="form-check gender-check">
                               <div class="row">
-                                <label for="gender">Gender</label>
+                                <label>Gender</label>
                               </div>
                               <div class="form-group">
-                                <input class="form-check-input position-static" type="radio" name="gender" value="male" {{ Auth::user()->gender == 'm' ? 'checked' : ''}}> Male
+                                <input class="form-check-input position-static" type="radio" name="gender" value="Male" {{ Auth::user()->gender == 'Male' ? 'checked' : ''}}> Male
                               </div>
                               <div class="form-group">
-                                <input class="form-check-input position-static" type="radio" name="gender" value="female" {{ Auth::user()->gender == 'f' ? 'checked' : ''}}> Female
+                                <input class="form-check-input position-static" type="radio" name="gender" value="Female" {{ Auth::user()->gender == 'Female' ? 'checked' : ''}}> Female
                               </div>
                             </div>
                           </div>
                           <div class="form-group">
                             <label for="inputDateOfBirth">Date of Birth</label>
-                            <input name="date_of_birth" type="text" class="form-control" id="inputDateOfBirth" value="{{ Auth::user()->date_of_birth }}" placeholder="dd/mm/yyyy">
+                            <input name="date_of_birth" type="text" class="form-control datepicker" id="datepicker" value="{{ Auth::user()->date_of_birth }}" placeholder="dd/mm/yyyy">
                           </div>
                           <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-profile-md mt-4">Save profile information</button>

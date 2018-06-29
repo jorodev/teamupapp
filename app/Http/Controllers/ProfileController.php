@@ -22,9 +22,11 @@ class ProfileController extends Controller
     
         $user->first_name = $request->input('first_name');
         $user->last_name = $request->input('last_name');
+        $user->country = $request->input('country');
         $user->city = $request->input('city');
         $user->occupation = $request->input('occupation');
-        $user->description =$request->input('description');
+        $user->description = $request->input('description');
+        $user->gender = $request->input('gender');
         $user->date_of_birth = $request->input('date_of_birth');
 
         $user->save();
